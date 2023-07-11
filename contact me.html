@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Me</title>
+  <style>
+    body {
+      background-color: lightpink;
+    }
+
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    button {
+      display: block;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Me!</h1>
+
+    <form method="post" onsubmit="refreshPage()">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value=" "><br>
+
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value=" "><br>
+
+      <label for="msg">Message:</label><br>
+      <input type="text" id="msg" name="msg" value=" "><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <br><br><br><br>
+    <button onclick="window.location.href = 'Tahrim Website.html';">Home</button>
+  </div>
+
+  <script>
+    function refreshPage() {
+      location.reload();
+    }
+  </script>
+</body>
+</html>
+
